@@ -1,0 +1,160 @@
+/* About.css */
+
+.about-container {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+.about-container h2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+.about-container h2 span img {
+  height: 5rem;
+}
+
+.movie-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #141414;
+  border-radius: 8px;
+}
+
+.movie-card__image {
+  width: 150px;
+  height: 80px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 4px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.movie-card__image:hover {
+  transform: scale(1.1);
+  transform: rotate(360deg);
+}
+
+.movie-card__content {
+  flex-grow: 1;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #d3d3d3;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d3d3d3;
+}
+
+.about-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.about-container h2 span {
+  color: #e50914;
+}
+
+.about-container ul li:before {
+  content: "•";
+  display: inline-block;
+  margin-right: 10px;
+  color: #e50914;
+}
+
+.about-container ul li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  li {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-container ul li {
+    flex-direction: column;
+  }
+  .about-title {
+    display: none;
+  }
+  .about-mobile {
+    display: block;
+    color: rgba(255, 255, 255, 0.126);
+  }
+  .about-mobile h2 {
+    text-align: center;
+  }
+
+  .about-container ul li:before {
+    display: none;
+  }
+
+  h3 {
+    text-align: center;
+    color: white;
+  }
+  h4 {
+    margin: 1rem 0;
+  }
+}

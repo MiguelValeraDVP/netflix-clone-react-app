@@ -1,0 +1,112 @@
+.body {
+  gap: 1rem;
+}
+section {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+}
+
+.content .form-container {
+  gap: 2rem;
+  height: 85vh;
+}
+
+.content .form-container .form {
+  padding: 2rem;
+  background-color: #000000b0;
+  width: 25vw;
+  gap: 2rem;
+  color: white;
+}
+
+.content .form-container .form .container {
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+}
+
+.body > .h1 {
+  padding: 0 25rem;
+}
+
+.form {
+  display: grid;
+  width: 60%;
+}
+
+form > input {
+  border: none;
+  color: black;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+form > input:focus {
+  outline: none;
+}
+
+form > button {
+  padding: 0.5rem 1rem;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.2rem;
+  font-weight: bolder;
+  font-size: 1.05rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #e50914;
+  border: transparent;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.2rem;
+  font-weight: bolder;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .content .form-container .form {
+    width: auto;
+    margin-top: 5rem;
+  }
+  .logo {
+    margin-top: 0;
+    box-shadow: #000000b0;
+  }
+  .logo img {
+    height: 2rem;
+    width: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content .form-container .form {
+    width: auto;
+    margin-top: 5rem;
+  }
+  .logo {
+    margin-top: 0;
+    box-shadow: #000000b0;
+  }
+  .logo img {
+    height: 2rem;
+    width: 6rem;
+  }
+}

@@ -1,0 +1,106 @@
+main {
+  background-color: black;
+}
+
+main .hero {
+  position: relative;
+}
+
+main .hero .background-image {
+  filter: brightness(60%);
+}
+
+main .hero img {
+  height: 100vh;
+  width: 100vw;
+}
+
+main .hero .container {
+  position: absolute;
+  bottom: 5rem;
+}
+main .hero .container .logo img {
+  width: 100%;
+  height: 100%;
+  margin-left: 5rem;
+}
+
+main .hero .container .buttons {
+  margin: 5rem;
+  gap: 2rem;
+}
+
+main .hero .container .buttons button {
+  font-size: 1.4rem;
+  gap: 1rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+main .hero .container .buttons button:hover {
+  opacity: 0.8;
+}
+
+main .hero .container .buttons button {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+main main .hero .container .buttons button svg {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 100vh;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  main .hero {
+    position: relative;
+    height: 100%;
+  }
+
+  main .hero .container .buttons {
+    margin: 1rem;
+    gap: 2rem;
+  }
+  main .hero .container .buttons button {
+    width: 15rem;
+    justify-content: center;
+  }
+  main .hero .container .logo img {
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+  }
+  main .hero .background-image {
+    filter: brightness(60%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  main .hero .container {
+    position: absolute;
+    bottom: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 425px) {
+  main .hero .container {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

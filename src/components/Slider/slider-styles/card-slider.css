@@ -1,0 +1,44 @@
+.card__slider__container {
+  gap: 1rem;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.card__slider__container h1 {
+  margin-left: 50px;
+}
+.card__slider__container .wrapper .slider-cont {
+  width: max-content;
+  gap: 1rem;
+  transform: translateX(0px);
+  transition: 0.3s ease-in-out;
+  margin-left: 50px;
+}
+.card__slider__container .wrapper .slider-action {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.card__slider__container .wrapper .slider-action svg {
+  font-size: 2rem;
+}
+.card__slider__container .wrapper .none {
+  display: none;
+}
+.card__slider__container .wrapper .left {
+  left: 0;
+}
+.card__slider__container .wrapper .right {
+  right: 0;
+}
+
+@media (max-width: 480px) {
+  .card__slider__container .wrapper .slider-cont {
+    margin-left: 126.3125rem !important;
+  }
+}

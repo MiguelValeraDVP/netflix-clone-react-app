@@ -1,0 +1,28 @@
+.user-movies-list-container {
+  padding: 8rem 2.3rem;
+  gap: 3rem;
+}
+
+.user-movies-list-container h1 {
+  margin: 1rem 3rem;
+}
+.user-movies-list-container .grid {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-movies-list-links {
+  color: rgba(255, 0, 0, 0.686);
+}
+.user-movies-list-flex {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .user-movies-list-flex {
+    flex-direction: column;
+  }
+  .user-movies-list-links {
+    color: rgba(255, 0, 0, 0.686);
+  }
+}

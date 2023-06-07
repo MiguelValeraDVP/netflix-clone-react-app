@@ -1,0 +1,43 @@
+.burger-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .left .links {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .links.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 2rem;
+  }
+
+  .links.show-menu li {
+    margin-bottom: 1rem;
+  }
+
+  .links.show-menu a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .burger-menu.open {
+    /* Additional styles for an open burger menu */
+  }
+}
